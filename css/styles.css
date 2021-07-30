@@ -252,12 +252,13 @@ a {
   overflow: hidden;
 }
 .card--header {
-  padding: 3rem 3rem;
+  padding: 2rem 2rem;
   color: white;
   position: relative;
 }
 .card--footer {
   padding: 2rem 3rem;
+  font-size: 2rem;
   background-color: white;
   color: var(--subheading-color);
 }
@@ -281,14 +282,16 @@ a {
 }
 .card--heading {
   margin-top: 0;
-  font-size: 2.5rem;
+  font-weight: 600;
+  font-size: 2.2rem;
 }
 .card--price {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 400;
 }
 .card--para {
   font-weight: 300;
+  font-size: 2rem;
   padding-top: 1rem;
   margin-bottom: 0;
 }
@@ -298,11 +301,18 @@ a {
   width: 3rem;
   position: absolute;
   right: 2rem;
-  top: 0.5rem;
+  top: 0;
+}
+
+.plan--list li {
+  padding-top: 0;
 }
 @media screen and (min-width: 1024px) {
   .plan--popular {
-    right: 7rem;
+    right: 4rem;
+  }
+  .plan--list li {
+    padding-top: 1rem;
   }
   .card--price {
     font-size: 4rem;
@@ -333,6 +343,7 @@ a {
 .quotes--content {
   font-style: italic;
   margin-top: 3rem;
+  font-size: 2rem;
 }
 .quotes--content::before {
   content: open-quote;
@@ -360,6 +371,9 @@ a {
   .quotes {
     font-size: 1.5rem;
     margin-left: 8rem;
+  }
+  .quotes--content {
+    font-size: 2.8rem;
   }
   .quotes--name {
     font-size: 1.5rem;
@@ -622,6 +636,9 @@ a {
   max-width: 900px;
   margin: 0 auto;
 }
+.domain-block--prices li {
+  cursor: pointer;
+}
 @media screen and (min-width: 864px) {
   .domain-block--prices {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
@@ -632,7 +649,7 @@ a {
   padding-top: 1rem;
 }
 .plan--block.grid {
-  gap: 4rem 4rem;
+  gap: 7rem 4rem;
 }
 .plan--block .card {
   max-width: 500px;
@@ -641,7 +658,7 @@ a {
   cursor: pointer;
 }
 .plan--list {
-  padding: 1rem 3rem;
+  padding: 1rem 1rem 1rem 3rem;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -655,11 +672,19 @@ a {
 .plan--block .card:hover {
   transform: scale(1.05);
 }
+
 .plan--block .popular--card:hover {
   transform: scale(1.05);
 }
+.plan--block .card--footer {
+  padding-bottom: 0;
+  font-weight: 400;
+}
+.plan--block .btns {
+  margin-top: 1rem;
+}
 .plan--block .plan--popular {
-  transform: scale(1.3);
+  transform: scale(1.1);
 }
 @media screen and (min-width: 1024px) {
   .plan--block .popular--card {
@@ -678,8 +703,14 @@ a {
 
 /*Features  */
 
+.features--block {
+  padding-right: 1rem;
+}
 .features {
   margin: 12rem 0;
+}
+.features--content p {
+  font-size: 2rem;
 }
 .features--title {
   letter-spacing: 0px;
@@ -698,10 +729,16 @@ a {
   margin-top: 4rem;
   padding: 0;
 }
+.features.grid {
+  gap: 3rem;
+}
 
 @media screen and (min-width: 768px) {
   .features--image {
     margin-left: 0;
+  }
+  .features--content p {
+    font-size: 2.5rem;
   }
   .features:nth-of-type(even) .features--content {
     order: 2;
@@ -810,4 +847,16 @@ a {
 /* Sign-up Callout */
 .callout-signup {
   transform: translateY(12rem);
+}
+.callout .btns {
+  margin-top: 0;
+}
+.callout {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+.callout--content p {
+  margin-top: 2rem;
 }
